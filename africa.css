@@ -1,0 +1,564 @@
+
+@media only screen and (max-width: 660px){
+	h2 {
+		font-size: 1.5rem;
+	}
+
+}
+@media only screen and (max-width: 760px ){
+	.icon-bar {
+		opacity: .5;
+	}
+}
+
+@media only screen and (max-width: 558px){
+	h1 {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 558px){
+	#copy {
+		font-size: 12px;
+	}
+}
+
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	background-color: #122b07;
+	color: #fff;
+}
+.navbar-brand img {
+	background-color: #fff;
+}
+.navbar-toggler {
+	background-color: #fff;
+}
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+button {
+	border-radius: 5px;
+}
+
+#logo {
+	color: #ffffff;
+	font-family: 'Homemade Apple', cursive;
+	font-size: 25px;
+	line-height: 50px;
+	margin-left: 25px;
+} 
+
+li a {
+	font-size: 25px;
+	line-height: 50px;
+	font-variant-caps: small-caps;
+	color: #ffffff;
+
+}
+.carousel-item img {
+	width: 100%;
+	max-height: 600px;
+	background-position: center center;
+	object-fit: cover;
+}
+.carousel-caption {
+	line-height: 1em;
+}
+
+.carousel-item h5 {
+	font-size: 25px;
+	color: #131414; 
+}
+
+.carousel-item p {
+	color: #131414; 
+	font-weight: bold;
+}
+
+/* side bar icons*/
+
+.icon-bar {
+  height: auto;
+  width: 50px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 50;
+  
+
+  background-color: #555;
+
+ 
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 22px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.row > .column {
+  padding: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+.column img {
+	width: 100%;
+	height: auto;
+	
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #55a3a2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -100px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  font-size: 25px;
+  font-family: sans-serif;
+  }
+
+.mySlides img {
+	height: 400px;
+	width: 100%;
+	object-fit: cover;
+
+}
+
+img.demo {
+  opacity: 0.8;
+}
+
+.pics {
+	display: inline-block;
+
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info {
+	
+	background-color: #122b07;
+	margin-top: 0;
+	padding: 2%;
+    height: 200px;
+    color: #ffffff;
+    
+    text-align: center;
+    font-family: Garamond, serif;
+    letter-spacing: 1px;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 400;
+}
+
+
+
+.info p {
+	font-size: .5em;
+	opacity: .8;
+	line-height: 25px;
+}
+
+.intro, .maasai {
+	padding: 3%;
+	margin: 4%;
+}
+#enter {
+	background-color: #122b07;
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 15px;
+}
+#sign_up {
+	background-color: transparent;
+	color: #fff;
+	margin-left: 5px;
+	border: 1px solid #fff;
+}
+hr {
+	  display: block;
+	  margin-top: 0.5em;
+	  margin-bottom: 0.5em;
+	  margin-left: auto;
+	  margin-right: 250px;
+	  border-width: 3px;
+	  background-color: #131945;
+}
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  background-color:black;
+}
+
+.jumbotron video {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width:100%;
+  height:100%;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  opacity:1;
+}
+
+.jumbotron .container {
+  z-index: 2;
+  position: relative;
+}
+
+#foot {
+	background-color: #122b07;
+	margin-top: 0;
+	padding: 3%;
+	color: #ffffff;
+	
+}
+h3 {
+	padding: 2px;
+	margin: 5px 0 20px 50px;
+}
+.social li {
+	display: inline-block;
+	margin: 0 15px;
+
+	
+}
+#arrow {
+	font-size: 25px;
+
+}
+#copy {
+	line-height: 45px;
+}
+
+i:hover {
+	color: grey;
+}
+
+#to-top i {
+    line-height: 29px;
+    width: 29px;
+    height: 29px;
+    font-size: 25px;
+    top: 0;
+    left: 0;
+    
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+}
+
+/* Gallery page grid */
+
+.hello {
+  opacity: 1 !important;
+}
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.full .content {
+  background-color: rgba(0,0,0,0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+.full .content img {
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+  animation: zoomin 1s ease;
+  max-width: 100%;
+  max-height: 70%;
+  margin: auto;
+}
+.byebye {
+  opacity: 0;
+}
+.byebye:hover {
+  transform: scale(0.2) !important;
+}
+.gallery {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 8px;
+}
+
+.gallery-header {
+	text-transform: uppercase;
+}
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+.gallery img:hover {
+  box-shadow: 0 0 32px #333;
+}
+.gallery .content {
+  padding: 4px;
+}
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
+}
+
+.guide {
+	padding: 1%;
+	margin: 2%;
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+.material-icons {
+	margin: 0 3px 0 0;
+}
+
+p .map {
+	text-decoration: none;
+	color: #fff;
+}
+
+.map:hover {
+	color: grey;
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
