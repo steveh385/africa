@@ -560,13 +560,13 @@ p .map {
 
 /* media query for side nav bar*/
 
-@media screen and (min-width: 352px){
+@media screen and (min-width: 320px){
   #logo {
     font-size: 17px;
   }
 }
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 500px){
   #logo {
     font-size: 25px;
   }
