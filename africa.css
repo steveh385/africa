@@ -366,6 +366,10 @@ i:hover {
 	color: grey;
 }
 
+#to-top {
+  background-color: #105e25;
+}
+
 #to-top i {
     line-height: 29px;
     width: 29px;
@@ -373,10 +377,10 @@ i:hover {
     font-size: 25px;
     top: 0;
     left: 0;
-    
     position: relative;
     z-index: 10;
     background-color: transparent;
+    text-align: center;
 }
 
 /* Gallery page grid */

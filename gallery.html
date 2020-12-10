@@ -13,7 +13,25 @@
   <link rel="stylesheet" type="text/css" href="africa.css">
   <title>Gallery</title>
   <link rel="shortcut icon" href="images/car-green.png" type="image/x-icon"> 
+   
+  <script>
     
+    function deferVideo() {
+
+    //defer html5 video loading
+  $("video source").each(function() {
+    var sourceFile = $(this).attr("data-src");
+    $(this).attr("src", sourceFile);
+    var video = this.parentElement;
+    video.load();
+    // uncomment if video is not autoplay
+    //video.play();
+  });
+
+}
+window.onload = deferVideo;
+
+  </script> 
   
 </head>
 <body>
@@ -29,10 +47,7 @@
     <div class="collapse navbar-collapse justify-content-end mr-3" id="navbarSupportedContent" >
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-light text-center" href="contact.html" target="_blank">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light text-center" href="#">Gallery</a>
+          <a class="nav-link text-light text-center" href="contact.html" target="_blank">Info</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light text-center" onclick="donate()" href="#">Donate</a>
@@ -126,6 +141,23 @@
         </div>
         <div class="gallery-item">
             <div class="content"><img src="images/img36.JPG" alt=""></div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid mb-0">
+
+      <video autoplay muted loop >    
+        <source src="" data-src="video/vid1.mp4" type="video/mp4">
+          <source src="" data-src="video/vid1.webm" type="video/webm">
+            <source src="" data-src="video/vid1.ogv" type="video/ogg">
+      </video>
+        <div class="container text-white">
+          <h1 class="display-4 text-center">Maasai Mara</h1>
+          <blockquote class="blockquote">
+            <p class="lead text-center">&#34;It is impossible to find a man<br> who has everything, but it is<br> possible to find one who <br>enjoys the things he has.&#34;</p>
+            <footer class="blockquote-footer text-center text-white">Maasai Proverb</footer>
+          </blockquote>
+          <br><br>  
         </div>
     </div>
     
