@@ -21,6 +21,11 @@
 		font-size: 12px;
 	}
 }
+@media only screen and (max-width: 320px){
+  #para {
+    display: none;
+  }
+}
 
 * {
 	box-sizing: border-box;
